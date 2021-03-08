@@ -30,4 +30,8 @@ setCustomValidator
 setCustomPhrase
 
 echo "READY"
-	
+
+echo "Your working directory is: " `pwd`
+
+echo "Prepare your crontab as follows if you want automatic execution:"
+echo "*/5 * * * * cd <YOUR WORKING DIRECTORY> && <YOUR WORKING DIRECTORY>/./combo.sh >> <YOUR WORKING DIRECTORY>/combo_log.txt"
