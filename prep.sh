@@ -26,6 +26,7 @@ wget https://raw.githubusercontent.com/BitLox/TON-validator-multisig-scripts/mai
 wget https://raw.githubusercontent.com/BitLox/TON-validator-multisig-scripts/main/filter.sh
 wget https://raw.githubusercontent.com/BitLox/TON-validator-multisig-scripts/main/signer.sh
 wget https://raw.githubusercontent.com/BitLox/TON-validator-multisig-scripts/main/combo.sh
+wget https://raw.githubusercontent.com/BitLox/TON-validator-multisig-scripts/main/setup.sh
 
 mkdir data
 
@@ -59,5 +60,5 @@ pwd > data/pwd.txt
 # setCustomValidator
 # setCustomPhrase
 
-echo "Nest step: Please run ./setup.sh"
+echo "Next step: Please run ./setup.sh"
 exit
