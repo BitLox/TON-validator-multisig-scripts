@@ -1,15 +1,10 @@
 #!/bin/bash
 
 case "$OSTYPE" in
-  solaris*) os_type="SOLARIS" ;; 
   darwin*)  os_type="OSX" ;; 
   linux*)   os_type="LINUX" ;; 
-  bsd*)     os_type="BSD" ;; 
-  msys*)    os_type="WINDOWS" ;; 
   *)        os_type="unknown" ;; 
 esac
-
-
   
 if [ "$os_type" == 'LINUX' ] 
 then
@@ -27,12 +22,14 @@ fi
 wget https://github.com/tonlabs/ton-labs-contracts/raw/master/solidity/safemultisig/SafeMultisigWallet.abi.json
 wget https://github.com/tonlabs/ton-labs-contracts/raw/master/solidity/safemultisig/SafeMultisigWallet.tvc
 
+wget https://raw.githubusercontent.com/BitLox/TON-validator-multisig-scripts/main/check.sh
+wget https://raw.githubusercontent.com/BitLox/TON-validator-multisig-scripts/main/filter.sh
+wget https://raw.githubusercontent.com/BitLox/TON-validator-multisig-scripts/main/signer.sh
+wget https://raw.githubusercontent.com/BitLox/TON-validator-multisig-scripts/main/combo.sh
+
 mkdir data
 
-#working_dir=$(`pwd`)
-
 pwd > data/pwd.txt
-
 
 function setCustomDepool {
   echo
