@@ -30,6 +30,8 @@ wget https://raw.githubusercontent.com/BitLox/TON-validator-multisig-scripts/mai
 
 mkdir data
 
+chmod +x *.sh
+
 pwd > data/pwd.txt
 
 echo "Next step: Please run ./setup.sh"
